@@ -1,0 +1,67 @@
+/* Generel styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SA_hero.width-1200.format-webp.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #91908e; /* Elefant farve */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Styler til paragrafen */
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #91908e; /* Elefant farve */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #91908e;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #91908e;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #91908e; /* Hover-effekt */
+    color: #fff; /* Hvid tekst ved hover */
+}
+
+/* Tilføj et billede af en Elefant i bunden */
+.elephant-image {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px; /* Maksimal bredde */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Sektion styling */
+section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

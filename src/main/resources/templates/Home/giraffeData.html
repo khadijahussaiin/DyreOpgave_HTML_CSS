@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Giraffens oplysninger</title>
+    <link rel="stylesheet" href="giraffe.css">
+</head>
+<body>
+<section>
+    <h1>Informationer om Giraf</h1>
+    <p><strong>Levested:</strong> <span th:text="${giraffe.habitat}"></span></p>
+    <p><strong>Farve:</strong> <span th:text="${giraffe.color}"></span></p>
+    <p><strong>Føde:</strong> <span th:text="${giraffe.food}"></span></p>
+    <p><strong>Fun Fact:</strong> <span th:text="${giraffe.funFact}"></span></p>
+    <p><strong>Vægt:</strong> <span th:text="${giraffe.weight}"></span> kg</p>
+    <a href="/">Tilbage til forsiden</a>
+    <img class="giraffe-image" src="https://ichef.bbci.co.uk/ace/standard/624/cpsprodpb/146A2/production/_91081638_mediaitem91081636.jpg" alt="Giraf">
+</section>
+</body>
+</html>
+

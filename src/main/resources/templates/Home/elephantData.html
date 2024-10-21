@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Elefantens oplysninger</title>
+    <link rel="stylesheet" href="elephant.css">
+</head>
+<body>
+<section>
+    <h1>Informationer om Elefant</h1>
+    <p><strong>Levested:</strong> <span th:text="${elephant.habitat}"></span></p>
+    <p><strong>Farve:</strong> <span th:text="${elephant.color}"></span></p>
+    <p><strong>Føde:</strong> <span th:text="${elephant.food}"></span></p>
+    <p><strong>Fun Fact:</strong> <span th:text="${elephant.funFact}"></span></p>
+    <p><strong>Vægt:</strong> <span th:text="${elephant.weight}"></span> kg</p>
+    <a href="/">Tilbage til forsiden</a>
+    <img class="elephant-image" src="https://cdn.mos.cms.futurecdn.net/uiCrUgVCf64TzEdTM8x9aD-1200-80.jpg" alt="Elefant">
+</section>
+</body>
+</html>

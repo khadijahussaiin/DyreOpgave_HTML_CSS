@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Løvens oplysninger</title>
+  <link rel="stylesheet" href="lion.css">
+</head>
+<body>
+<section>
+  <h1>Informationer om Løve</h1>
+  <p><strong>Levested:</strong> <span th:text="${lion.habitat}"></span></p>
+  <p><strong>Farve:</strong> <span th:text="${lion.color}"></span></p>
+  <p><strong>Føde:</strong> <span th:text="${lion.food}"></span></p>
+  <p><strong>Fun Fact:</strong> <span th:text="${lion.funFact}"></span></p>
+  <p><strong>Vægt:</strong> <span th:text="${lion.weight}"></span> kg</p>
+  <a href="/">Tilbage til forsiden</a>
+  <img class="lion-image" src="https://www.worldanimalprotection.ca/cdn-cgi/image/width=1280,format=auto/siteassets/shutterstock_2461984615.jpg" alt="Løve">
+</section>
+</body>
+</html>

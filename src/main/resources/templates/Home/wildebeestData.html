@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Gnuens oplysninger</title>
+    <link rel="stylesheet" href="wildebeest.css">
+</head>
+<body>
+<section>
+    <h1>Informationer om Gnu</h1>
+    <p><strong>Levested:</strong> <span th:text="${wildebeest.habitat}"></span></p>
+    <p><strong>Farve:</strong> <span th:text="${wildebeest.color}"></span></p>
+    <p><strong>Føde:</strong> <span th:text="${wildebeest.food}"></span></p>
+    <p><strong>Fun Fact:</strong> <span th:text="${wildebeest.funFact}"></span></p>
+    <p><strong>Vægt:</strong> <span th:text="${wildebeest.weight}"></span> kg</p>
+    <a href="/">Tilbage til forsiden</a>
+    <img class="wildebeest-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Blue_Wildebeest%2C_Ngorongoro.jpg/800px-Blue_Wildebeest%2C_Ngorongoro.jpg" alt="Gnu">
+</section>
+</body>
+</html>

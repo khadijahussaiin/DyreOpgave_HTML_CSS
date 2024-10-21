@@ -1,0 +1,51 @@
+body {
+    background-color: #f5f5dc; /* Lys beige som sandfarvet baggrund */
+    font-family: 'Arial', sans-serif; /* Enkel skrifttype for bedre læsbarhed */
+    color: #040404; /* Mørk tekst for god kontrast */
+    background-image: url('https://static.posters.cz/image/750/plakater/rain-forrest-i102000.jpg'); /* Billede af skov eller savanne */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container { /* CSS-klassen anvendes på sektionen <section class="container"> som står i html */
+    display: flex; /* flexbox-layout, som gør det nemt at arrangere elementer (i mind box) i en linje eller kolonne. */
+    flex-wrap: wrap; /*  Gør, at boksne vil "brydes" til næste linje, hvis der ikke er plads nok. */
+    justify-content: center; /* Centrerer boksene horisontalt */
+    padding: 20px; /* Giver 20px plads omkring hele sektionen.  */
+    gap: 20px; /*  Giver 20px mellemrum mellem de enkelte boks med dyrart. */
+}
+
+.card { /* CSS-klassen anvendes på hvert boks <div class="card"> i min index HTML klasse */
+    background-color: #fff; /* Sætter baggrundsfarven på boksen med dyrarten til hvid. */
+    border-radius: 40px; /* Gør hjørnerne af boksen til runde */
+    padding: 20px; /* Giver plads inde i boksen (20px mellem indholdet og kanten). */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Giver kortet en skyggeeffekt. */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Tilføjer en animationseffekt, når kortet bliver hoveret. */
+    flex: 1 1 300px; /* Gør boksene flexible med en minimumsstørrelse på 300px. */
+    max-width: 400px; /* Begrænser bredden af boksen til 400px. */
+    text-align: center; /* Centrerer tekst og andre elementer inden i bokset. */
+}
+
+.card:hover { /* Hover-effekten på boksene . Når musen svæver over en boks af dyrart, vil*/
+    transform: translateY(-10px);/* Flytte kortet 10px op. */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);/* Ændre skyggen for at fremhæve boksen */
+}
+
+/* Knap med hover-effekt */
+button { /* Stiler knappen.*/
+    background-color: #4CAF50; /* Sætter knapfarven til grøn */
+    border: none; /*  Fjerner kantlinjen omkring knappen */
+    color: white; /* Sætter knaptekstfarven til hvid. */
+    padding: 15px 32px; /* Giver knappen indvendig polstring, så den ser større ud. */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px; /* Gør knappen rund. */
+    transition: background-color 0.3s ease, transform 0.2s ease; /*  Tilføjer en animation, når baggrundsfarven og størrelsen ændres ved hover.*/
+    float: left; /* Placerer knappen til venstre (dog ikke rigtig relevant, da flexbox håndterer placeringen).*/
+}
+
+button:hover { /* Hover-effekten på knappen. Når musen svæver over knappen, ændres farven lidt, og knappen bliver en smule større.*/
+    background-color: #45a049; /**/
+    transform: scale(1.05); /**/
+}

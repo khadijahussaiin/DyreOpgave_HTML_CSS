@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Hajens oplysninger</title>
+    <link rel="stylesheet" href="shark.css">
+</head>
+<body>
+<section>
+    <h1>Informationer om Haj</h1>
+    <p><strong>Levested:</strong> <span th:text="${shark.habitat}"></span></p>
+    <p><strong>Farve:</strong> <span th:text="${shark.color}"></span></p>
+    <p><strong>Føde:</strong> <span th:text="${shark.food}"></span></p>
+    <p><strong>Fun Fact:</strong> <span th:text="${shark.funFact}"></span></p>
+    <p><strong>Vægt:</strong> <span th:text="${shark.weight}"></span> kg</p>
+    <a href="/">Tilbage til forsiden</a>
+    <img class="shark-image" src="https://cdn.britannica.com/79/65379-050-5CF52BAC/Shortfin-mako-shark-seas.jpg" alt="Haj">
+</section>
+</body>
+</html>
